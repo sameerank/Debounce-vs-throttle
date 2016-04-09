@@ -4,10 +4,18 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+var onKeyUpCount = 0
+
+function getRecentKeyUpCount () {
+  var recentCallCount = countCalls["on-key-up"] - onKeyUpCount;
+  onKeyUpCount = countCalls["on-key-up"];
+  return recentCallCount;
+}
+
 function next() {
   return {
     time: ++t,
-    value: v = getRandomInt(0,10)
+    value: v = getRecentKeyUpCount()
   };
 }
 
@@ -18,7 +26,7 @@ var x = d3.scale.linear()
   .range([0, w]);
 
 var y = d3.scale.linear()
-  .domain([0, 10])
+  .domain([0, 4])
   .rangeRound([0, h]);
 
 var chart = d3.select("#graph")
