@@ -1,0 +1,32 @@
+body {
+  min-width: 900px;
+}
+
+h3 {
+  text-align: center;
+}
+
+form {
+  width: 304px;
+  margin: 0 auto;
+}
+
+.center {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.col {
+  width: 27%;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid red;
+  background-color: gray;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}

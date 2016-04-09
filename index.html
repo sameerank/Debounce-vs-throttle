@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Search Cities Form</title>
+    <link rel="stylesheet" href="./css/style.css" charset="utf-8">
+    <script src="./main.js" charset="utf-8"></script>
+    <script
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+    type="text/javascript">
+    </script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
+    charset="utf-8">
+    </script>
+
+  </head>
+  <body>
+    <form>
+      <label>Type here to search a city: </label>
+      <input type="text" id="city-input" onkeyup="getCities()" />
+    </form>
+    <div class="center">
+      <div class="row">
+        <div class="col">
+          <h3>On key up</h3>
+          <p class="count-on-key-up">Number of calls: 0</p>
+          <ul class="ul-on-key-up">
+          </ul>
+        </div>
+        <div class="col">
+          <h3>With debounce</h3>
+          <p class="count-with-debounce">Number of calls: 0</p>
+          <ul class="ul-with-debounce">
+          </ul>
+        </div>
+        <div class="col">
+          <h3>With throttle</h3>
+          <p class="count-with-throttle">Number of calls: 0</p>
+          <ul class="ul-with-throttle">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
