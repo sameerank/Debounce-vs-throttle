@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
     <title>Search Cities Form</title>
     <link rel="stylesheet" href="./css/style.css" charset="utf-8">
-    <script src="./main.js" charset="utf-8"></script>
+
     <script
     src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
     type="text/javascript">
     </script>
+
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"
     charset="utf-8">
     </script>
+
     <script src="./d3.min.js" charset="utf-8"></script>
 
-
-
+    <script src="./js/main.js" charset="utf-8"></script>
 
   </head>
+
   <body>
+
     <form>
       <label>Type here to search a city: </label>
       <input type="text" id="city-input" onkeyup="getCities()" />
@@ -48,38 +52,7 @@
       </div>
     </div>
 
-    <script type="text/javascript">
-    //  the data that powers the bar chart, a simple array of numeric values
-    var chartdata = [0, 1, 1, 0, 2, 0, 4, 1, 0, 2, 1, 0, 1, 0 , 3, 2, 1];
-    chartdata = chartdata.map(function (el) {return 10 * el;});
-
-    //  the size of the overall svg element
-    var height = 40,
-    width = 242,
-
-    //  the width of each bar and the offset between each bar
-    barWidth = 10,
-    barOffset = 4;
-
-
-    d3.select('#graph').append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .style('background', '#dff0d8')
-    .selectAll('rect').data(chartdata)
-    .enter().append('rect')
-    .style({'fill': '#3c763d', 'stroke': '#d6e9c6', 'stroke-width': '5'})
-    .attr('width', barWidth)
-    .attr('height', function (data) {
-      return data;
-    })
-    .attr('x', function (data, i) {
-      return i * (barWidth + barOffset);
-    })
-    .attr('y', function (data) {
-      return height - data;
-    });
-
-    </script>
+    <script src="./js/charts.js" charset="utf-8"></script>
   </body>
+
 </html>

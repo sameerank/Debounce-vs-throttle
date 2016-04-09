@@ -6,19 +6,19 @@ h3 {
   text-align: center;
 }
 
-path {
-    stroke: steelblue;
-    stroke-width: 2;
-    fill: none;
-}
-
-line {
-    stroke: black;
-}
-
 form {
   width: 304px;
   margin: 0 auto;
+}
+
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+.chart rect {
+  fill: steelblue;
+  stroke: #d6e9c6;
 }
 
 .center {
