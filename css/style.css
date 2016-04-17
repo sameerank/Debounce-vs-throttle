@@ -5,18 +5,22 @@ body {
 h3 {
   text-align: center;
   font-family: 'Lato', sans-serif;
+  color: #EEE;
 }
 
 p {
   font-family: 'Oswald', sans-serif;
+  color: #90C3D4;
 }
 
 label {
   font-family: 'Oswald', sans-serif;
+  color: #555;
 }
 
 ul {
   font-family: 'Lato', sans-serif;
+  color: #EEE;
 }
 
 form {
@@ -44,7 +48,7 @@ svg {
   float: left;
   padding: 15px;
   margin: 10px;
-  background-color: gray;
+  background-color: #555;
 }
 
 .row:after {
