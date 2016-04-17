@@ -4,7 +4,19 @@ body {
 
 h3 {
   text-align: center;
-  font-family: 'Arial';
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+}
+
+label {
+  font-family: 'Oswald', sans-serif;
+}
+
+ul {
+  font-family: 'Lato', sans-serif;
 }
 
 form {
@@ -32,7 +44,6 @@ svg {
   float: left;
   padding: 15px;
   margin: 10px;
-  border: 1px solid red;
   background-color: gray;
 }
 
