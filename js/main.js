@@ -21,7 +21,9 @@ function doAjaxCall(typeOfCall) {
 }
 
 function showCities(cityAry, typeOfCall) {
-  $(".count-" + typeOfCall).text("Number of calls: " + countCalls[typeOfCall]);
+  $(".count-" + typeOfCall).html("Number of calls: <br><span>"
+  + countCalls[typeOfCall]
+  + "</span>");
   var ulByClass = $(".ul-" + typeOfCall);
   ulByClass.empty();
   cityAry.forEach(
